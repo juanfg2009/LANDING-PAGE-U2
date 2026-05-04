@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafío: Vista de Producto Semántica</title>
+</head>
+<body>
+
+    <!-- Módulo 1: Encabezado (La puerta de entrada) [3] -->
+    <header>
+        <img src="logo.png" alt="Logotipo de la Tienda">
+        
+        <!-- Barra de búsqueda (falsa) -->
+        <form>
+            <input type="search" placeholder="Busca productos, marcas y más...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Historial</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Módulo 2: Presentación del Producto (Centro de atención) [4] -->
+        <section id="presentacion-producto">
+            <span>Estado: Nuevo</span> <!-- Estado del producto [4] -->
+            <h1>Smartphone Pro Max 512GB - Edición Especial</h1>
+            
+            <figure>
+                <!-- Galería con imagen principal y descripción alternativa [4] -->
+                <img src="producto-principal.jpg" alt="Vista frontal del Smartphone Pro Max en color gris espacial">
+                <figcaption>Galería de imágenes del producto</figcaption>
+                <img src="thumb1.jpg" alt="Vista lateral del teléfono">
+                <img src="thumb2.jpg" alt="Detalle de las cámaras traseras">
+            </figure>
+        </section>
+
+        <!-- Módulo 3: Zona de Compra (Donde ocurre la conversión) [4] -->
+        <section id="compra">
+            <p><del>$129.99</del></p> <!-- Precio anterior tachado [4] -->
+            <p><strong>$99.99</strong> <span>23% OFF</span></p> <!-- Precio actual y descuento [4] -->
+            
+            <div>
+                <p>Pagá en 12 cuotas sin interés</p>
+                <p>Ver medios de pago aceptados</p>
+            </div>
+
+            <button type="button">Comprar ahora</button>
+            <button type="button">Agregar al carrito</button>
+        </section>
+
+        <!-- Módulo 4: Ficha Técnica (Detalles duros) [5] -->
+        <section id="especificaciones">
+            <!-- Sección desplegable usando etiquetas nativas [5] -->
+            <details>
+                <summary>Especificaciones técnicas</summary>
+                <ul>
+                    <li><strong>Procesador:</strong> Octa-core 3.2GHz</li>
+                    <li><strong>Memoria RAM:</strong> 12GB</li>
+                    <li><strong>Batería:</strong> 5000 mAh</li>
+                    <li><strong>Cámara:</strong> 108MP + 12MP + 12MP</li>
+                </ul>
+            </details>
+
+            <div>
+                <h3>Descripción detallada</h3>
+                <p>Este dispositivo redefine la potencia móvil con su procesador de última generación y una pantalla que cobra vida con colores vibrantes...</p>
+            </div>
+        </section>
+
+        <!-- Módulo 5: Opiniones de los Usuarios (El poder de <article>) [5] -->
+        <section id="opiniones">
+            <h2>Opiniones de los compradores</h2>
+            
+            <!-- Cada opinión es un bloque independiente <article> [5] -->
+            <article>
+                <header>
+                    <img src="usuario1.jpg" alt="Avatar de Juan Pérez">
+                    <h3>Juan Pérez</h3>
+                    <time datetime="2023-10-25">25 de octubre de 2023</time>
+                </header>
+                <p>Excelente producto, llegó antes de lo esperado y funciona de maravilla. La cámara es increíble.</p>
+            </article>
+
+            <article>
+                <header>
+                    <img src="usuario2.jpg" alt="Avatar de María García">
+                    <h3>María García</h3>
+                    <time datetime="2023-11-02">2 de noviembre de 2023</time>
+                </header>
+                <p>Muy buena relación calidad-precio. El diseño es muy elegante.</p>
+            </article>
+        </section>
+
+        <!-- Módulo 6: Productos Relacionados (Contenido tangencial) [6] -->
+        <aside id="relacionados">
+            <h2>También te podría interesar</h2>
+            <!-- Al menos 2 sugerencias [6] -->
+            <article>
+                <img src="funda.jpg" alt="Funda protectora de silicona">
+                <h3>Funda Protectora Premium</h3>
+                <p>$15.00</p>
+            </article>
+            <article>
+                <img src="cargador.jpg" alt="Cargador de carga rápida 45W">
+                <h3>Cargador Rápido Ultra</h3>
+                <p>$25.00</p>
+            </article>
+        </aside>
+    </main>
+
+    <!-- Módulo 7: Pie de Página (Cierre estructural) [6] -->
+    <footer>
+        <section>
+            <h4>Información de Contacto</h4>
+            <p>Email: soporte@tienda.com</p>
+            <p>Teléfono: 0800-123-4567</p>
+        </section>
+        
+        <section>
+            <h4>Enlaces de Ayuda</h4>
+            <ul>
+                <li><a href="#">Cómo comprar</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Medios de Pago</h4>
+            <p>Aceptamos todas las tarjetas de crédito y débito.</p>
+        </section>
+
+        <section>
+            <h4>Garantía</h4>
+            <p>Garantía oficial de fábrica por 12 meses.</p>
+        </section>
+    </footer>
+
+</body>
+</html>
